@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "stylesheet.css">
+    <title>Balance Sheet Calculator</title>
+</head>
+<body>
+    <div class ="flex-container">
+        <div class = "heading"><h1>Bellarmine Financials - Balance Sheet Calculator</h1></div>
+    </div>
+    <div class = "grid-container">
+        <div class = "grid-item">
+            <h2 class = "AssetTitle">Assets</h2>
+        </div>
+        <div class = "grid-item">
+            <h2 class ="LiabilitiesTitle">Liabilities</h2>
+        </div>
+        <div class ="grid-item">
+            <h3>Current Assets</h3>
+            <div class = "CurrentAssetsGrid" id ="CurrentAssetsGrid">
+                <button id ="AddCurrentAssets" onclick = "addCurrentAssets()">Add Current Assets</button>
+            </div>
+        </div>
+        <div class ="grid-item">
+            <h3>Current Liabilties</h3>
+            <div class = "CurrentLiabilitiesGrid" id ="CurrentLiabilitiesGrid">
+                <button id ="AddCurrentLiabilities" onclick ="addCurrentLiabilities()">Add Current Liabilities</button>
+            </div>
+        </div>
+        <div class ="grid-item">
+            <h3>Investment Property & Equipments</h3>
+            <div class = "InvestmentPropertyGrid" id ="InvestmentPropertyGrid">
+                <button id ="InvestmentPropButton" onclick ="addInvestmentProperty()">Add Investment Property & Equipment</button>
+            </div>
+        </div>
+        <div class = "grid-item">
+            <h3>Long-Term Liabilities</h3>
+            <div class ="LongTermGrid" id ="LongTermGrid">
+                <button id ="addLongTermLiabilities" onclick ="addLongTermLiabilities()">Add Long-Term Liabilities</button>
+            </div>
+        </div>
+        <div class ="grid-item">
+            <h3>Intangibles</h3>
+            <div class ="IntangibleGrid" id ="IntangibleGrid">
+                <button id ="AddIntangibles" onclick = "addIntangibles()">Add Intangibles</button>
+            </div>
+        </div>
+        <div class = "grid-item">
+            <h1>Total Position</h1>
+            <button id ="CalculatePosition" onclick = "calculatePosition()">Calculate Position</button>
+            <h3 id ="TotalAssets">Total Assets:</h3>
+            <h3 id ="TotalLiabilities">Total Liabilities:</h3>
+            <h3 id ="Position">Position:</h3>
+        </div>
+    </div>
+    <div class ="flex-container"><label class = "Footer">Bellarmine University 2024</label></div>
+    
+</body>
+<script src ="BalanceSheetScript.js"></script>
+</html>

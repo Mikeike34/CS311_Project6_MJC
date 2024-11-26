@@ -1,0 +1,104 @@
+body{
+    background-color: #e2b445;
+}
+.flex-container{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; 
+    flex-direction: row;
+}
+.flex-container .heading{
+    display: flex;
+    flex-grow: 1;
+    background-color: #762836;
+    color: rgba(255, 255, 255, 0.925);
+}
+.grid-container .AssetTitle{
+    display: grid;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+}
+.grid-container .LiabilitiesTitle{
+    display: grid;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    
+}
+.flex-container .AssetTitle{
+    display: flex;
+    flex-grow: .8;
+    background-color: black;
+    color: white;
+    border-top: 4px solid #e2b445;
+    
+}
+.flex-container .LiabilitiesTitle{
+    display: flex;
+    flex-grow: 1;
+    background-color: black;
+    color: white;
+    border-top: 4px solid #e2b445;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    
+}
+
+.grid-container .CurrentAssetsGrid{
+    display: grid;
+    justify-items: right;
+    grid-template-rows: 1 1 1 1 1;
+    visibility: show;
+}
+
+.grid-container .CurrentLiabilitiesGrid{
+    display: grid;
+    justify-items: right;
+    grid-template-rows: 1 1 1 1 1 1;
+    visibility: show;
+}
+
+.grid-container .InvestmentPropertyGrid{
+    display: grid;
+    justify-items: right;
+    grid-template-rows: 1 1 1 1 1 1;
+    visibility: show;
+}
+
+.grid-container .LongTermGrid{
+    display: grid;
+    justify-items: right;
+    grid-template-rows: 1 1 1;
+    visibility: show;
+}
+
+.grid-container .IntangibleGrid{
+    display: grid;
+    justify-items: right;
+    grid-template-rows: 1 1 1;
+    visibility: show;
+    column-gap: 20px;
+}
+
+.flex-container .Footer{
+    display: flex;
+    flex-grow: 1;
+    background-color: #762836;
+    color: rgba(255, 255, 255, 0.925);
+    margin: 0;
+    font-size:small;
+    padding: 5px;
+}
+.grid-container .TextStyle{
+    margin: 0;
+}
+.grid-container .LabelStyle{
+    margin: 1;
+}
